@@ -64,7 +64,7 @@ void app_main(void)
 	ssd1306_contrast(&dev, 0xff);
 	ssd1306_clear_screen(&dev, false);
     ssd1306_bitmaps(&dev, 0, 0, ElectroHub, 128, 64, false);
-    vTaskDelay(1500/portTICK_PERIOD_MS);
+    vTaskDelay(2000/portTICK_PERIOD_MS);
     ssd1306_bitmaps(&dev, 0, 0, no_press, 128, 64, false);
     vTaskDelay(250/portTICK_PERIOD_MS);
     ssd1306_bitmaps(&dev, 0, 0, light_press, 128, 64, false);
